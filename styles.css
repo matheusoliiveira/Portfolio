@@ -11,8 +11,7 @@ body {
 }
 
 .secao {
-  padding-top: 100px 0;
-  padding-left: 50px;
+  padding: 100px 0 100px 50px;
 }
 
 header {
@@ -21,6 +20,7 @@ header {
   align-items: center;
   padding: 30px;
   margin-left: 30px;
+  color: #fff;
 }
 
 ul {
@@ -41,7 +41,7 @@ ul {
   font-size: 80px;
   line-height: 1.1;
   margin-bottom: 30px;
-  letter-spacing: -5;
+  letter-spacing: -5px;
 }
 
 .principal h1 span {
@@ -83,7 +83,7 @@ ul {
 
 .grade-projetos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
 }
 
@@ -234,8 +234,30 @@ html {
 
  a {
   text-decoration: none;
-  color: #fff;
+  color: blueviolet;
+  font-weight: bold;
  }
+
+ .topo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 24px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none; /* <- esse aqui esconde o botão */
+}
+
+#btnTopo:hover {
+  background-color: #555;
+}
+
+
 
 @media (max-width: 768px) {
   header {
