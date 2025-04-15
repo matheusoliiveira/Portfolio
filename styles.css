@@ -174,7 +174,6 @@ section a {
   cursor: pointer;
 }
 
-
 .botoes-contato {
   display: flex;
   flex-wrap: wrap;
@@ -183,7 +182,6 @@ section a {
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
-  
 }
 
 .botao-contato {
@@ -197,8 +195,6 @@ section a {
   min-width: 160px;
   text-decoration: none;
   color: #fff;
-
-  
 }
 
 .whatsapp {
@@ -297,7 +293,6 @@ a {
   }
 }
 
-
 .flutuar-inverso {
   animation: flutuar-inverso 3s ease-in-out infinite;
 }
@@ -313,8 +308,6 @@ a {
     transform: translateY(0);
   }
 }
-
-
 
 @media (max-width: 768px) {
   header {
