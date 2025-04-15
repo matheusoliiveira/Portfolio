@@ -91,6 +91,7 @@ ul {
   background-color: #161616;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .img-projeto {
@@ -209,7 +210,6 @@ footer {
 .efeito-cursor {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  
 }
 
 .efeito-cursor:hover {
@@ -236,13 +236,13 @@ html {
   scroll-behavior: smooth;
 }
 
- a {
+a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
- }
+}
 
- .topo {
+.topo {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -260,8 +260,6 @@ html {
 #btnTopo:hover {
   background-color: #555;
 }
-
-
 
 @media (max-width: 768px) {
   header {
@@ -289,4 +287,3 @@ html {
     height: auto;
   }
 }
-
