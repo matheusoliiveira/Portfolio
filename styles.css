@@ -173,10 +173,7 @@ section a {
   font-size: 14px;
   cursor: pointer;
 }
-.tag-habilidades:hover {
-  transform: translateY(-10px); /* Move para cima */
-  transition: transform 0.3s ease-in-out; /* Animação suave */
-}
+
 
 .botoes-contato {
   display: flex;
@@ -186,7 +183,7 @@ section a {
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
-  transition: transform 0.3s ease-in-out;
+  
 }
 
 .botao-contato {
@@ -200,8 +197,8 @@ section a {
   min-width: 160px;
   text-decoration: none;
   color: #fff;
-  transform: translateY(-10px);
-  transition: transform 0.3s ease-in-out;
+
+  
 }
 
 .whatsapp {
@@ -283,6 +280,41 @@ a {
 #btnTopo:hover {
   background-color: #555;
 }
+
+.flutuar {
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.flutuar-inverso {
+  animation: flutuar-inverso 3s ease-in-out infinite;
+}
+
+@keyframes flutuar-inverso {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 @media (max-width: 768px) {
   header {
