@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="scrollReveal.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -17,7 +18,7 @@
   <header>
     <ul>
       <li class="efeito-cursor">
-        <a>Home</a>
+        <a href="#">Home</a>
       </li>
       <li class="efeito-cursor">
         <a href="#projetos">Projetos</a>
@@ -34,7 +35,7 @@
   <section class="principal">
     <div>
       <h1 class="efeito-cursor"><span>
-          </span>Olá, eu sou <span>Matheus Oliveira</span>.</h1>
+        </span>Olá, eu sou <span>Matheus Oliveira</span>.</h1>
       <p>
         Transformando ideias em experiências digitais e interfaces intuitivas.
       </p>
@@ -61,7 +62,7 @@
       </div>
 
       <div class="card-projeto efeito-cursor">
-        <img class="img-projeto" src="./img/conversor de moedas.png" alt="imagem-projeto-conversor-de-moedas"/>
+        <img class="img-projeto" src="./img/conversor de moedas.png" alt="imagem-projeto-conversor-de-moedas" />
         <div class="info-projeto">
           <h3>Conversor de Moedas</h3>
           <p>
@@ -74,7 +75,7 @@
       </div>
 
       <div class="card-projeto efeito-cursor">
-        <img class="img-projeto" src="./img/gestor de tarefas.png" alt="imagem-projeto-gestor-de-tarefas"/>
+        <img class="img-projeto" src="./img/gestor de tarefas.png" alt="imagem-projeto-gestor-de-tarefas" />
         <div class="info-projeto">
           <h3>Gestor de Tarefas</h3>
           <p>
@@ -87,7 +88,7 @@
       </div>
 
       <div class="card-projeto efeito-cursor">
-        <img class="img-projeto" src="./img/instagram.png" alt="imagem-projeto-instagram"/>
+        <img class="img-projeto" src="./img/instagram.png" alt="imagem-projeto-instagram" />
         <div class="info-projeto">
           <h3>Instagram Home Page</h3>
           <p>
@@ -103,7 +104,7 @@
       </div>
 
       <div class="card-projeto efeito-cursor">
-        <img class="img-projeto" src="./img/jogo da cobrinha.png" alt="imagem-projeto-jogo-da-cobrinha"/>
+        <img class="img-projeto" src="./img/jogo da cobrinha.png" alt="imagem-projeto-jogo-da-cobrinha" />
         <div class="info-projeto">
           <h3>Jogo da Cobrinha</h3>
           <p>
@@ -117,7 +118,7 @@
       </div>
 
       <div class="card-projeto efeito-cursor">
-        <img class="img-projeto" src="./img/nike air zoom.png" alt="imagem-projeto-nike-air-zoom"/>
+        <img class="img-projeto" src="./img/nike air zoom.png" alt="imagem-projeto-nike-air-zoom" />
         <div class="info-projeto">
           <h3>Nike Air Zoom</h3>
           <p>
@@ -208,25 +209,41 @@
 
 
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
-  const cursor = document.querySelector('.cursor')
+  window.addEventListener("DOMContentLoaded", function () {
+    const cursor = document.querySelector(".cursor");
 
-  document.addEventListener('mousemove', function (info) {
-    cursor.style.left = info.clientX + 'px'
-    cursor.style.top = info.clientY + 'px'
-  })
+    document.addEventListener("mousemove", function (info) {
+      cursor.style.left = info.clientX + "px";
+      cursor.style.top = info.clientY + "px";
+    })
 
-  const topoBtn = document.querySelector('.topo');
+    const topoBtn = document.querySelector(".topo");
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    topoBtn.style.display = 'block';
-  } else {
-    topoBtn.style.display = 'none';
-  }
-});
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        topoBtn.style.display = "block";
+      } else {
+        topoBtn.style.display = "none";
+      }
+    })
 
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.titulo-secao, .principal h1, .principal p, .botao', { delay: 300, origin: 'top' });
+    ScrollReveal().reveal('.card-projeto', { delay: 300, origin: 'bottom', interval: 200 });
+    ScrollReveal().reveal('.sobre', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.botoes-contato a', { delay: 300, origin: 'bottom', interval: 100 });
+  });
 
 </script>
+
+
 
 </html>

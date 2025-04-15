@@ -21,6 +21,10 @@ header {
   padding: 30px;
   margin-left: 30px;
   color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: #0d1b2a;
+  z-index: 1000;
 }
 
 ul {
@@ -94,11 +98,18 @@ ul {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.card-projeto:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
 .img-projeto {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .info-projeto {
@@ -162,6 +173,10 @@ section a {
   font-size: 14px;
   cursor: pointer;
 }
+.tag-habilidades:hover {
+  transform: translateY(-10px); /* Move para cima */
+  transition: transform 0.3s ease-in-out; /* Animação suave */
+}
 
 .botoes-contato {
   display: flex;
@@ -171,10 +186,12 @@ section a {
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .botao-contato {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   padding: 15px 25px;
@@ -183,6 +200,8 @@ section a {
   min-width: 160px;
   text-decoration: none;
   color: #fff;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
 }
 
 .whatsapp {
@@ -246,15 +265,19 @@ a {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  font-size: 24px;
-  background-color: #4d7cfe;
+  background: #4d7cfe;
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 10px;
+  font-size: 18px;
+  border-radius: 50%;
   cursor: pointer;
-  z-index: 1000;
-  display: none; /* <- esse aqui esconde o botão */
+  display: none;
+  transition: background 0.3s ease;
+}
+
+.topo:hover {
+  background: #335acb;
 }
 
 #btnTopo:hover {
