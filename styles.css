@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #0a0a0a;
+  background: #0d1b2a;
   color: #fff;
 }
 
@@ -45,7 +45,7 @@ ul {
 }
 
 .principal h1 span {
-  color: blueviolet;
+  color: #4d7cfe;
 }
 
 .principal p {
@@ -59,7 +59,7 @@ ul {
 .botao {
   display: inline-block;
   padding: 15px 30px;
-  background-color: blueviolet;
+  background-color: #4d7cfe;
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -78,7 +78,7 @@ ul {
   bottom: -15px;
   width: 100px;
   height: 4px;
-  background-color: blueviolet;
+  background-color: #4d7cfe;
 }
 
 .grade-projetos {
@@ -114,8 +114,12 @@ ul {
 }
 
 .info-projeto {
-  color: blueviolet;
+  color: #4d7cfe;
   font-weight: 500;
+}
+
+section a {
+  color: #4d7cfe;
 }
 
 .sobre {
@@ -149,7 +153,7 @@ ul {
 
 .tag-habilidades {
   background-color: rgba(77, 124, 254, 0.2);
-  color: blueviolet;
+  color: #fff;
   padding: 8px 15px;
   border-radius: 20px;
   margin-right: 10px;
@@ -234,7 +238,7 @@ html {
 
  a {
   text-decoration: none;
-  color: blueviolet;
+  color: #fff;
   font-weight: bold;
  }
 
@@ -243,7 +247,7 @@ html {
   right: 20px;
   bottom: 20px;
   font-size: 24px;
-  background-color: blueviolet;
+  background-color: #4d7cfe;
   color: white;
   border: none;
   padding: 10px 15px;
